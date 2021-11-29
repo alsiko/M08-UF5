@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script type="text/javascript"> 
+                function validar(){ 
+                var psswd=document.getElementById("psswd").value; 
+                var confpsswd=document.getElementById("confpsswd").value; 
+                if(psswd==confpsswd){ 
+                return true; 
+                } 
+                else{ 
+                alert("No coincideix"); 
+                return false; 
+                } 
+                } 
+            </script>
+            <meta charset="UTF-8">
+            <meta lang="cat">
+            <title>Formulari d’enviament</title>
+        </head>
+        <body style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            <table align="center" cellspacing="0" style="background: #EFEFEF;">
+                <form action="alejandro.tome@inslapineda.cat" onsubmit="return validar();">
+                    <tr style="background: #306090;">
+                        <td width="370" style="color: #FFFFFF;"><h3>Enviar misatge</h3></td>
+                        <td width="80"><img src="img/gb_reload_s.gif"> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="nom">&nbsp;Nom:</label> <input type="text" size="40" id="nom" name="nom" maxlength="50"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="mail">&nbsp;E-Mail:</label> <input type="email" size="39" id="mail" name="mail"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="nom">&nbsp;Arxiu:</label> <input type="text" size="40" id="arxiu" name="arxiu"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;<input type="file" name="arxiu" id="arxiu"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="nom">&nbsp;Imatge:</label> <input type="text" size="38" id="img" name="img"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;<input type="file" name="img" id="img"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center"><font size="1">El tamany de l'arxiu i la imatge no pot exedir els 4 KBytes</font></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="usr">&nbsp;Usuari:</label> <input type="text" size="38" id="usr" name="usr" maxlength="8" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="passwd">&nbsp;Contrasenya:</label> <input type="password" size="32" id="passwd" name="passwd" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><label for="confpsswd">&nbsp;Confirmar contrasenya:</label> <input type="password" size="22" id="confpsswd" name="confpsswd" required></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;Quins jocs t'interessen?:</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;<input type="checkbox" id="joc" name="mc" value="mc"><label for="mc">Minecraft</label></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;<input type="checkbox" id="joc" name="ft" value="ft"><label for="ft">Fortnite</label></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;<input type="checkbox" id="joc" name="lol" value="lol"><label for="lol">League of Legends</label></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;<input type="checkbox" id="joc" name="cr" value="cr"><label for="cr">Clash Royale</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;Requereixo resposta: <input type="radio" id="si" name="si" value="si"> <label for="si">Sí</label> <input type="radio" id="si" name="si" value="no"> <label for="si">No</label></td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2"><label for="desc">Misatge</label></td>
+                    </tr>
+                    <tr align="center">
+                        <td colspan="2"><textarea name="desc" id="desc" cols="45" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="2"><input type="submit" value="Enviar"> <input type="reset" value="Borrar"></td>
+                    </tr>
+                </form>
+            </table>
+        </body>
+    </html>

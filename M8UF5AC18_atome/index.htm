@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html lang="ca">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Calcutredora</title>
+        </head>
+        <body>
+            <form name="calculadora">
+                <table align="center" cellspacing="0">
+                    <tr>
+                        <th colspan="4">CALCUTREDORA</th>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><input type="textfield" name="ans" value=""></td>
+                    </tr>
+                    <tr width="0">
+                        <td><div onClick="document.calculadora.ans.value+='1'"><img src="img/1.png" alt="1" width="50" height="50"></td>
+                        <td><div onClick="document.calculadora.ans.value+='2'"><img src="img/2.png" alt="2" width="50" height="50"></td>
+                        <td><div onClick="document.calculadora.ans.value+='3'"><img src="img/3.png" alt="3" width="50" height="50"></td>
+                        <td><div onClick="document.calculadora.ans.value+='+'"><img src="img/+.png" alt="+" width="50" height="50"></td>
+                    </tr>
+                    <tr>
+                        <td><div onClick="document.calculadora.ans.value+='4'"><img src="img/4.png" alt="4" width="50" height="50"></td>
+                        <td><div onClick="document.calculadora.ans.value+='5'"><img src="img/5.jpg" alt="5" width="50" height="50"></td>
+                        <td><div onClick="document.calculadora.ans.value+='6'"><img src="img/6.jpg" alt="6" width="50" height="50"></td>
+                        <td><div onClick="document.calculadora.ans.value+='-'"><img src="img/-.jpg" alt="-" width="50" height="50"></td>
+                    </tr>
+                    <tr>
+                        <td><div onClick="document.calculadora.ans.value+='7'"><img src="img/7.jpg" alt="7" width="50" height="50"></td>
+                        <td><div onClick="document.calculadora.ans.value+='8'"><img src="img/8.png" alt="8" width="50" height="50"></td>
+                        <td><div onClick="document.calculadora.ans.value+='9'"><img src="img/9.jpg" alt="9" width="50" height="50"></td>
+                        <td><div onClick="document.calculadora.ans.value+='*'"><img src="img/x.png" alt="*" width="50" height="50"></td>
+                    </tr>
+                    <tr>
+                        <td><div onClick="document.calculadora.ans.value+='0'"><img src="img/0.jpg" alt="0" width="50" height="50"></td>
+                        <td><div onClick="document.calculadora.ans.value='&nbsp'"><img src="img/c.png" alt="c" width="50" height="50"></td>
+                        <td><div onClick="document.calculadora.ans.value+='/'"><img src="img/div.png" alt="/" width="50" height="50"></td>
+                        <td><div onClick="document.calculadora.ans.value=eval(document.calculadora.ans.value)"><img src="img/=.jpg" alt="=" width="50" height="50"></div></td>
+                    </tr>
+                </table>
+            </form>
+        </body>
+    </html>

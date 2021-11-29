@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <meta lang="cat">
+            <title>Formulari 1 d'enregistrament</title>
+        </head>
+        <body>
+            <h1>Formulari bàsic de registre</h1>
+            <form action="" method="GET">
+                <label for="fname">Nom:</label><br>
+                <input type="text" id="fname" name="fname" maxlength="50"><br>
+                <label for="lname">Cognom:</label><br>
+                <input type="text" id="lname" name="lname" maxlength="50"><br>
+                <label for="genere">Sexe:</label><br>
+                <input type="radio" id="genere" name="genere" value="Dona">
+                <label for="Dona">Dona</label><br>
+                <input type="radio" id="genere" name="genere" value="Home">
+                <label for="Homa">Home</label><br>
+                <label for="gmail">Correu electrònic</label><br>
+                <input type="email" id="gmail" name="gmail"><br>
+                <label for="verifi">Verificació:</label><br>
+                <input type="checkbox" id="anunci" name="anunci" value="publicitat" checked>
+                <label for="anunci">Vull rebre informació sobre novetats i ofertes</label><br>   
+                <input type="checkbox" id="RGPD" name="RGPD" value="normativa">
+                <label for="RGPD">Declaro haver llegit i acceptar les condicions generals del programa i la normativa sobre protecció de dades indicada al RGPD</label><br>
+                <label for="poble">Població:</label><br>
+                <select name="poble" id="poble">
+                    <option value="1">Arbúcies</option>
+                    <option value="2">Badalona</option>
+                    <option value="3">Barclona</option>
+                    <option value="4">Girona</option>
+                    <option value="5">Vilassar de Mar</option>
+                </select><br>
+                <label for="desc">Descropció:</label><br>
+                <textarea name="desc" id="desc" cols="30" rows="10"></textarea><br>
+                <input type="submit" value="Envia"><br>
+            </form> 
+        </body>
+    </html>
